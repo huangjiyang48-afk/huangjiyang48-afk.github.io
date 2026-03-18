@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄吉洋 | 游戏策划 & 开发者</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ==================== 导航栏 ==================== -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>
+            JY
+            <span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#about" class="nav-link">关于我</a></li>
+            <li><a href="#projects" class="nav-link">项目作品</a></li>
+            <li><a href="#skills" class="nav-link">技能</a></li>
+            <li><a href="#education" class="nav-link">教育背景</a></li>
+            <li><a href="#contact" class="nav-link">联系我</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ==================== 首屏 Hero ==================== -->
+<section class="hero" id="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+        <div class="hero-avatar">
+            <img src="assets/images/profile.jpg" alt="黄吉洋" 
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'avatar-placeholder\'><i class=\'fas fa-user\'></i></div>'">
+        </div>
+        <h1 class="hero-title">
+            <span class="greeting">你好，我是</span>
+            <span class="name">黄吉洋</span>
+        </h1>
+        <div class="hero-subtitle">
+            <span class="typewriter" id="typewriter"></span>
+            <span class="cursor">|</span>
+        </div>
+        <p class="hero-description">
+            北京邮电大学 · 数字媒体技术 · 2026届本科<br>
+            游戏策划 / Unity开发 / 系统设计
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-gamepad"></i> 查看项目
+            </a>
+            <a href="assets/files/resume.pdf" class="btn btn-outline" target="_blank">
+                <i class="fas fa-download"></i> 下载简历
+            </a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-target="4">0</span>+
+                <span class="stat-label">项目经验</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="3">0</span>.60
+                <span class="stat-label">GPA</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="6">0</span>/51
+                <span class="stat-label">专业排名</span>
+            </div>
+        </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <span>向下滚动</span>
+    </a>
+</section>
+
+<!-- ==================== 关于我 ==================== -->
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-icon"><i class="fas fa-user"></i></span>
+            关于我
+        </h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    我是一名来自<strong>北京邮电大学数字媒体技术专业</strong>的大四学生，
+                    GPA 3.60（排名 6/51），对<strong>游戏策划与开发</strong>充满热情。
+                </p>
+                <p>
+                    我拥有从独立毕设到商业项目的多元经验——在《Dark War》项目中主导装备养成线设计，
+                    在独立毕设《AI共生》中将CNN训练流程创造性地映射为游戏玩法闭环。
+                    我擅长将复杂系统拆解为清晰的设计文档并落地实现。
+                </p>
+                <p>
+                    我相信好的游戏策划不仅需要创意，更需要对技术实现、数值平衡和用户体验的深刻理解。
+                </p>
+                <div class="about-info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>北京邮电大学 2026届</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-award"></i>
+                        <span>两次奖学金获得者</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-flag"></i>
+                        <span>中共预备党员</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-language"></i>
+                        <span>英语六级</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-chess"></i></div>
+                    <h3>系统策划</h3>
+                    <p>装备养成、数值平衡、经济系统设计</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-code"></i></div>
+                    <h3>Unity开发</h3>
+                    <p>ScriptableObject、事件驱动架构</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-vr-cardboard"></i></div>
+                    <h3>AR/VR</h3>
+                    <p>AR互动体验、VR虚拟展厅设计</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>数值设计</h3>
+                    <p>战斗数值、掉落概率、难度曲线</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 项目作品 ==================== -->
+<section class="section section-dark" id="projects">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-icon"><i class="fas fa-gamepad"></i></span>
+            项目作品
+        </h2>
+        
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="professional">商业项目</button>
+            <button class="filter-btn" data-filter="independent">独立项目</button>
+            <button class="filter-btn" data-filter="team">团队项目</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- ============================================================
+                 项目1: Dark War — 图片轮播
+                 
+                 📌 图片路径说明：
+                 把截图放到 assets/images/darkwar/ 文件夹下
+                 然后修改下面 <img src="assets/images/darkwar/1.jpg"> 的文件名
+                 想加更多图片就复制一个 <div class="slide"> 块
+                 ============================================================ -->
+            <div class="project-card" data-category="professional">
+                <div class="project-header">
+                    <div class="project-badge">商业实习</div>
+                    <span class="project-date">2025.06 - 12</span>
+                </div>
+
+                <!-- ⭐ 图片轮播 -->
+                <div class="carousel" data-carousel>
+                    <div class="carousel-track" data-carousel-track>
+                        <!-- 第1张图 -->
+                        <div class="slide active">
+                            <img src="assets/images/darkwar/1.jpg" alt="Dark War 截图1"
+                                 onerror="this.parentElement.innerHTML='<div class=\'slide-placeholder\'><i class=\'fas fa-image\'></i><p>darkwar/1.jpg</p><span>请将图片放入 assets/images/darkwar/ 文件夹</span></div>'">
+                        </div>
+                        <!-- 第2张图 -->
+                        <div class="slide">
+                            <img src="assets/images/darkwar/2.jpg" alt="Dark War 截图2"
+                                 onerror="this.parentElement.innerHTML='<div class=\'slide-placeholder\'><i class=\'fas fa-image\'></i><p>darkwar/2.jpg</p><span>请将图片放入 assets/images/darkwar/ 文件夹</span></div>'">
+                        </div>
+                        <!-- 第3张图 -->
+                        <div class="slide">
+                            <img src="assets/images/darkwar/3.jpg" alt="Dark War 截图3"
+                                 onerror="this.parentElement.innerHTML='<div class=\'slide-placeholder\'><i class=\'fas fa-image\'></i><p>darkwar/3.jpg</p><span>请将图片放入 assets/images/darkwar/ 文件夹</span></div>'">
+                        </div>
+                        <!-- 第4张图 -->
+                        <div class="slide">
+                            <img src="assets/images/darkwar/4.jpg" alt="Dark War 截图4"
+                                 onerror="this.parentElement.innerHTML='<div class=\'slide-placeholder\'><i class=\'fas fa-image\'></i><p>darkwar/4.jpg</p><span>请将图片放入 assets/images/darkwar/ 文件夹</span></div>'">
+                        </div>
+                        <!-- 第5张图 -->
+                        <div class="slide">
+                            <img src="assets/images/darkwar/5.jpg" alt="Dark War 截图5"
+                                 onerror="this.parentElement.innerHTML='<div class=\'slide-placeholder\'><i class=\'fas fa-image\'></i><p>darkwar/5.jpg</p><span>请将图片放入 assets/images/darkwar/ 文件夹</span></div>'">
+                        </div>
+                        <!-- 第6张图 -->
+                        <div class="slide">
+                            <img src="assets/images/darkwar/6.jpg" alt="Dark War 截图6"
+                                 onerror="this.parentElement.innerHTML='<div class=\'slide-placeholder\'><i class=\'fas fa-image\'></i><p>darkwar/6.jpg</p><span>请将图片放入 assets/images/darkwar/ 文件夹</span></div>'">
+                        </div>
+                        <!-- 第7张图 -->
+                        <div class="slide">
+                            <img src="assets/images/darkwar/7.jpg" alt="Dark War 截图7"
+                                 onerror="this.parentElement.innerHTML='<div class=\'slide-placeholder\'><i class=\'fas fa-image\'></i><p>darkwar/7.jpg</p><span>请将图片放入 assets/images/darkwar/ 文件夹</span></div>'">
+                        </div>
+                        <!-- 第8张图 -->
+                        <div class="slide">
+                            <img src="assets/images/darkwar/8.jpg" alt="Dark War 截图8"
+                                 onerror="this.parentElement.innerHTML='<div class=\'slide-placeholder\'><i class=\'fas fa-image\'></i><p>darkwar/8.jpg</p><span>请将图片放入 assets/images/darkwar/ 文件夹</span></div>'">
+                        </div>
+                        <!-- 第9张图 -->
+                        <div class="slide">
+                            <img src="assets/images/darkwar/9.jpg" alt="Dark War 截图9"
+                                 onerror="this.parentElement.innerHTML='<div class=\'slide-placeholder\'><i class=\'fas fa-image\'></i><p>darkwar/.jpg</p><span>请将图片放入 assets/images/darkwar/ 文件夹</span></div>'">
+                        </div>
+                    </div>
+
+                    <!-- 左右箭头 -->
+                    <button class="carousel-btn carousel-btn-left" data-carousel-prev>
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn carousel-btn-right" data-carousel-next>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- 底部圆点指示器 -->
+                    <div class="carousel-dots" data-carousel-dots></div>
+
+                    <!-- 图片计数 -->
+                    <div class="carousel-counter" data-carousel-counter>1 / 5</div>
+                </div>
+
+                <div class="project-content">
+                    <h3 class="project-title">《Dark War》</h3>
+                    <p class="project-desc">
+                        主导新增一条完整的装备养成线，涵盖系统设计、数值平衡、功能实现、数据配置、活动开放等全流程。
+                        设计与配置英雄及武器技能，设计PVE爬塔关卡，平衡SLG特殊环境怪物数值。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">系统策划</span>
+                        <span class="tag">数值平衡</span>
+                        <span class="tag">装备养成</span>
+                        <span class="tag">PVE设计</span>
+                        <span class="tag">SLG</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight"><i class="fas fa-check"></i> 主导完整装备养成线设计</div>
+                        <div class="highlight"><i class="fas fa-check"></i> 英雄及武器技能系统设计</div>
+                        <div class="highlight"><i class="fas fa-check"></i> PVE爬塔关卡设计与数值调优</div>
+                        <div class="highlight"><i class="fas fa-check"></i> 买量版本建筑养成系统策划</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+                 项目2: AI共生 — B站视频嵌入
+                 
+                 📌 替换方法：
+                 1. 上传视频到B站
+                 2. 在视频页面点 分享 → 嵌入代码
+                 3. 找到 BV号（如 BV1xK4y1P7ab）
+                 4. 替换下面 bvid= 后面的内容
+                 ============================================================ -->
+            <div class="project-card featured" data-category="independent">
+                <div class="project-header">
+                    <div class="project-badge badge-featured">⭐ 独立毕设</div>
+                    <span class="project-date">毕业设计</span>
+                </div>
+                <div class="project-video-container">
+                    <!-- ⭐ 替换 bvid= 后面为你的B站视频BV号 -->
+                    <iframe 
+                        src="//player.bilibili.com/player.html?bvid=BV1tDwozaEi5&autoplay=0&high_quality=1" 
+                        scrolling="no" border="0" frameborder="no" framespacing="0" 
+                        allowfullscreen="true" class="project-video"
+                        sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts">
+                    </iframe>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">《AI共生》废土策略生存严肃游戏</h3>
+                    <p class="project-desc">
+                        将CNN训练流程映射为"探索-建造-训练-战斗"闭环，通过训练曲线/模型卡片/战报反馈实现AI科普。
+                        采用ScriptableObject数据驱动与事件机制解耦系统模块。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">严肃游戏</span>
+                        <span class="tag">AI科普</span>
+                        <span class="tag">策略生存</span>
+                        <span class="tag">独立开发</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight"><i class="fas fa-check"></i> CNN训练→游戏玩法创意映射</div>
+                        <div class="highlight"><i class="fas fa-check"></i> ScriptableObject数据驱动架构</div>
+                        <div class="highlight"><i class="fas fa-check"></i> 20×20六边形地图 + BFS寻路</div>
+                        <div class="highlight"><i class="fas fa-check"></i> Loss/Accuracy实时曲线模拟</div>
+                        <div class="highlight"><i class="fas fa-check"></i> 回合制战斗 + 战报系统</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+                 项目3: 3D历史教育 — B站视频嵌入
+                 ============================================================ -->
+            <div class="project-card" data-category="team">
+                <div class="project-header">
+                    <div class="project-badge badge-team">团队项目</div>
+                </div>
+                <div class="project-video-container">
+                    <!-- ⭐ 替换 bvid= 后面为你的B站视频BV号 -->
+                    <iframe 
+                        src="//player.bilibili.com/player.html?bvid=BV1xRwozfExx&autoplay=0&high_quality=1" 
+                        scrolling="no" border="0" frameborder="no" framespacing="0" 
+                        allowfullscreen="true" class="project-video"
+                        sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts">
+                    </iframe>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">3D历史教育功能游戏</h3>
+                    <p class="project-desc">
+                        主导设计时间线叙事系统，通过任务链串联历史事件，设计人物养成系统，
+                        实现物品、任务、NPC数据库存储，实现人物基础动画、简单模拟经营。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">叙事设计</span>
+                        <span class="tag">任务系统</span>
+                        <span class="tag">养成系统</span>
+                        <span class="tag">模拟经营</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight"><i class="fas fa-check"></i> 时间线叙事系统设计</div>
+                        <div class="highlight"><i class="fas fa-check"></i> 任务链串联历史事件</div>
+                        <div class="highlight"><i class="fas fa-check"></i> 物品/任务/NPC数据库</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================================
+                 项目4: AR/VR文创 — B站视频嵌入
+                 ============================================================ -->
+            <div class="project-card" data-category="team">
+                <div class="project-header">
+                    <div class="project-badge badge-team">团队项目</div>
+                </div>
+                <div class="project-video-container">
+                    <!-- ⭐ 替换 bvid= 后面为你的B站视频BV号 -->
+                    <iframe 
+                        src="//player.bilibili.com/player.html?bvid=BV1tDwozaEuK&autoplay=0&high_quality=1" 
+                        scrolling="no" border="0" frameborder="no" framespacing="0" 
+                        allowfullscreen="true" class="project-video"
+                        sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts">
+                    </iframe>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">AR/VR文创产品项目</h3>
+                    <p class="project-desc">
+                        AR实现通过扫描特定图像或实物触发定制化剧情动画，增强用户互动体验。
+                        策划VR虚拟展厅导览路径与交互点，设计排版打印宣传册实体产品。
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">AR</span>
+                        <span class="tag">VR</span>
+                        <span class="tag">文创产品</span>
+                        <span class="tag">交互设计</span>
+                    </div>
+                    <div class="project-highlights">
+                        <div class="highlight"><i class="fas fa-check"></i> AR图像识别触发剧情动画</div>
+                        <div class="highlight"><i class="fas fa-check"></i> VR虚拟展厅路径规划</div>
+                        <div class="highlight"><i class="fas fa-check"></i> 实体宣传册设计制作</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 技能 ==================== -->
+<section class="section" id="skills">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-icon"><i class="fas fa-cogs"></i></span>
+            专业技能
+        </h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-chess-king"></i> 游戏策划</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">系统策划</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">数值设计</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">关卡设计</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">叙事设计</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> 技术能力</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">Unity引擎</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C#编程</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">算法与数据结构</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">AR/VR开发</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-palette"></i> 设计 & 其他</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span class="skill-name">计算机图形学</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">镜头语言设计</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Office办公</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">英语（CET-6）</span>
+                        <div class="skill-bar"><div class="skill-fill" data-width="72%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 教育背景 ==================== -->
+<section class="section section-dark" id="education">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-icon"><i class="fas fa-graduation-cap"></i></span>
+            教育背景
+        </h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>北京邮电大学</h3>
+                        <span class="timeline-date">2022.09 - 2026.06</span>
+                    </div>
+                    <p class="timeline-subtitle">数字媒体技术专业 · 本科</p>
+                    <ul class="timeline-details">
+                        <li><strong>GPA：3.60</strong>（排名 6/51）</li>
+                        <li>主修：游戏引擎、算法与数据结构、概率论与数理统计、设计思维、计算机图形学、镜头语言设计</li>
+                        <li>荣誉：两次奖学金、支部先锋模范</li>
+                        <li>政治面貌：中共预备党员</li>
+                        <li>校园：协助组织高校双创实践活动，作为学生代表参与培养方案评审</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 联系方式 ==================== -->
+<section class="section" id="contact">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-icon"><i class="fas fa-envelope"></i></span>
+            联系我
+        </h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <h3>电话</h3>
+                <p>19812635441</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <h3>邮箱</h3>
+                <p><a href="mailto:m19812635441@163.com">m19812635441@163.com</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>所在地</h3>
+                <p>北京</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/你的用户名" target="_blank">github.com/你的用户名</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== 页脚 ==================== -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 黄吉洋 | 游戏策划 & 开发者</p>
+        <p class="footer-sub">Built with ❤️ using HTML, CSS & JavaScript</p>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
